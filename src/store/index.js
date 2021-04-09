@@ -1,31 +1,27 @@
 import { Provider, connect } from "react-redux";
 import { applyMiddleware, createStore, combineReducers, bindActionCreators } from "redux";
-const CHANGE_MESSAGE = 'change_message';
+import carouselData from './database/dataCarousel.json'
+import recentPostData from './database/recentPostData.json'
 
-//This is the Action Creator
-let changeMessage = function(message) { 
- 
-  let newMessage;
-  if(message=='First Message') {
-    newMessage = 'Second Message';
-  } else {
-    newMessage = 'First Message';
-  }
-  
-  //return an action
-  return {
-    type: CHANGE_MESSAGE,
-    payload: newMessage
+
+//Our reducer
+let carouselReducer = function(state={
+  data: carouselData
+}, action) {
+
+  switch(action.type) {
+    
+    default:
+      return state;
   }
 }
 
-//Our reducer
-let messageReducer = function(state={}, action) {
+let recentPostReducer = function(state={
+  data: recentPostData
+}, action) {
 
   switch(action.type) {
-    case CHANGE_MESSAGE:
-   
-      return action.payload;
+    
     default:
       return state;
   }
@@ -33,8 +29,8 @@ let messageReducer = function(state={}, action) {
 
 //This is the final reducer that gets attached to our store.
 const rootReducer = combineReducers ({
-
-  message: messageReducer
+  carousel: carouselReducer,
+  recentPost: recentPostReducer,
 });
 
 //create the store
@@ -48,5 +44,5 @@ const Redux = props => {
   };
 
 export{
-    Redux, changeMessage
+    Redux
 }
