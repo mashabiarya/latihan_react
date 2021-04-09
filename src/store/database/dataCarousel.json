@@ -1,0 +1,62 @@
+[
+  {
+    "img": "assets/images/banner-item-01.jpg",
+    "category": "Fashion",
+    "desc": "Morbi dapibus condimentum",
+    "li": [
+      "Admin",
+      "May 12, 2020",
+      "2 Comments"
+    ]
+  },
+  {
+    "img": "assets/images/banner-item-02.jpg",
+    "category": "Nature",
+    "desc": "Donec porttitor augue at velit",
+    "li": [
+      "Admin",
+      "May 14, 2020",
+      "24 Comments"
+    ]
+  },
+  {
+    "img": "assets/images/banner-item-03.jpg",
+    "category": "Lifestyle",
+    "desc": "Best HTML Templates on TemplateMo",
+    "li": [
+      "Admin",
+      "May 16, 2020",
+      "36 Comments"
+    ]
+  },
+  {
+    "img": "assets/images/banner-item-04.jpg",
+    "category": "Fashion",
+    "desc": "Responsive and Mobile Ready Layouts",
+    "li": [
+      "Admin",
+      "May 18, 2020",
+      "48 Comments"
+    ]
+  },
+  {
+    "img": "assets/images/banner-item-05.jpg",
+    "category": "Fashion",
+    "desc": "Cras congue sed augue id ullamcorper",
+    "li": [
+      "Admin",
+      "May 24, 2020",
+      "64 Comments"
+    ]
+  },
+  {
+    "img": "assets/images/banner-item-06.jpg",
+    "category": "Lifestyle",
+    "desc": "Suspendisse nec aliquet ligula",
+    "li": [
+      "Admin",
+      "May 26, 2020",
+      "72 Comments"
+    ]
+  }
+]
